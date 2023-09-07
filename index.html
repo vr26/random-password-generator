@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="author" content="Chan Myae Maung">
-		<meta name="keywords" content="Random, password, generator, password generator">
-		<meta name="description" content="Random Password Generator">
-		<meta name=”robots” content="index, follow">
-		<title>Password Generator</title>
-		<link rel="stylesheet" href="./main.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="meow.css" />
-		<link rel="apple-touch-icon" sizes="180x180" href="https://aioblue.bmyanmar.com/favicon/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="https://aioblue.bmyanmar.com/favicon/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="https://aioblue.bmyanmar.com/favicon/favicon-16x16.png" />
-		<link rel="manifest" href="https://aioblue.bmyanmar.com/favicon/site.webmanifest" />
-	</head>
-	<body>
-		<!-- INSERT HTML HERE -->
-		<div class="container">
-			<h2>Password Generator</h2>
-			<div class="result-container">
-				<span id="result"></span>
-				<button class="btn" id="clipboard">
-					<i class="far fa-clipboard"></i>
-				</button>
-			</div>
-			<div class="settings">
-				<div class="setting">
-					<label>Password length</label>
-					<input type="number" id="length" min="4" max="20" value="8" />
-				</div>
-				<div class="setting">
-					<label>Include uppercase letters</label>
-					<input type="checkbox" id="uppercase" checked />
-				</div>
-				<div class="setting">
-					<label>Include lowercase letters</label>
-					<input type="checkbox" id="lowercase" checked />
-				</div>
-				<div class="setting">
-					<label>Include numbers</label>
-					<input type="checkbox" id="numbers" checked />
-				</div>
-				<div class="setting">
-					<label>Include symbols</label>
-					<input type="checkbox" id="symbols" checked />
-				</div>
-			</div>
-			<button class="btn btn-large" id="generate">Generate password</button>
-		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chan Myae Maung">
+    <meta name="keywords" content="Random, password, generator, password generator">
+    <meta name="description" content="Random Password Generator">
+    <meta name="robots" content="index, follow">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="meow.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aioblue.bmyanmar.com/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aioblue.bmyanmar.com/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aioblue.bmyanmar.com/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://aioblue.bmyanmar.com/favicon/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password length</label>
+                <input type="number" id="length" min="4" max="20" value="8">
+            </div>
+            <div class="setting">
+                <label for="uppercase">Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label for="numbers">Include numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label for="symbols">Include symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">Generate password</button>
+    </div>
 
-		<script src="./main.js"></script>
-	</body>
+    <script src="main.js"></script>
+</body>
 </html>
